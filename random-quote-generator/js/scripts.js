@@ -1,9 +1,17 @@
 const quoteContainer = document.getElementById('primary-quote-container');
+const quoteLeft = document.getElementById('quote-left');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('idLoader');
+
+//Detect Mobile Browser
+const isMobile = function() {
+    const match = window.matchMedia('(pointer:coarse)');
+    return (match && match.matches);
+};
+
 
 //Show Loading
 function loading(){
@@ -36,10 +44,22 @@ async function getQuote() {
     }
 
     //Reduce Font Size for long quotes > 120 chars in length
-    if (data.quoteText.length > 120){
-      quoteText.classList.add('long-quote');
-    }else {
+    if(isMobile()){
+      if (data.quoteText.length > 50){
+        quoteLeft.classList.add('fa-quote-left-long-mobile');
+        quoteText.classList.add('quote-text-long-mobile');
+        authorText.classList.add('quote-author-long-mobile');
+      }else{
+        quoteLeft.classList.remove('fa-quote-left-long-mobile');
+        quoteText.classList.remove('quote-text-long-mobile');
+        authorText.classList.remove('quote-author-long-mobile');
+      }
+    }else{
+      if (data.quoteText.length > 120){
+        quoteText.classList.add('long-quote');
+      }else {
       quoteText.classList.remove('long-quote');
+      }
     }
 
     quoteText.innerText = data.quoteText;//1st quoteText is Userdefined, the 2nd is from API

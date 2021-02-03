@@ -25,17 +25,26 @@ body{
   box-shadow: 0 10px 10px 10px rgba(170, 109, 163, 0.3);
 }
 
+.fa-quote-left{
+  font-size: 4rem;
+}
+
+.fa-quote-left-long-mobile{
+  font-size: 1.5rem;
+}
+
 .quote-text {
   font-size: 2.75rem;
+}
+
+.quote-text-long-mobile{
+  font-size: 1.50rem;
 }
 
 .long-quote{
   font-size: 2rem;
 }
 
-.fa-quote-left{
-  font-size: 4rem;
-}
 
 .quote-author{
   margin-top: 15px;
@@ -43,6 +52,10 @@ body{
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.quote-author-long-mobile{
+  font-size: 1.4rem;
 }
 
 .button-container {
@@ -81,6 +94,24 @@ button:active{
   font-size: 1.5rem;
 }
 
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #AA6DA3;
+  text-align: center;
+}
+
+footer > p{
+  margin: 0;
+  padding: 0;
+}
+
+footer > p:last-child{
+  margin-top: 5px;
+}
+
 /*LOADER*/
 .loader {
   border: 16px solid #f3f3f3;
@@ -101,9 +132,17 @@ button:active{
 @media screen and (max-width: 1000px){
   .quote-container{
     margin: auto 10px;
+    max-height: 70vh;
+  }
+
+  .fa-quote-left{
+    font-size: 2rem;
   }
 
   .quote-text{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
+
+  .quote-author{
+    font-size: 1.5rem;
 }
