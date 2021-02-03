@@ -3,25 +3,9 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
-const loader = document.getElementById('idLoader');
-
-//Show Loading
-function loading(){
-  loader.hidden = false;
-  quoteContainer.hidden = true;
-}
-
-//Hide Loading
-function loading_complete(){
-  if (!loader.hidden) {
-    quoteContainer.hidden = false;
-    loader.hidden = true;
-  }
-}
 
 //Get Quote From API
 async function getQuote() {
-  loading();
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; //Proxy URL to avoid CORS error
   const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
   try {
@@ -41,13 +25,10 @@ async function getQuote() {
     }else {
       quoteText.classList.remove('long-quote');
     }
-
     quoteText.innerText = data.quoteText;//1st quoteText is Userdefined, the 2nd is from API
-
-    //Stop Loader and Show Quote
-    loading_complete();
   } catch (error) {
     getQuote(); //Added to refetch in case of API Error.
+
   }
 }
 
