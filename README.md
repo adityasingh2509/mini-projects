@@ -2,7 +2,7 @@
 
 <div align="center">Use the below Links (latest first) to view the Web-Pages.</div>
 
-- [Picture in Picture](https://adityasingh2509.github.io/mini-projects/picture-in-picture/index.html)
+- [Picture in Picture (Desktop Only)](https://adityasingh2509.github.io/mini-projects/picture-in-picture/index.html)
 
 - [Infinite Scroll](https://adityasingh2509.github.io/mini-projects/infinite-scroller/index.html)
 
