@@ -2,7 +2,7 @@
 
 ### Desktop Only
 
-- [Picture in Picture (Desktop Only)](https://adityasingh2509.github.io/mini-projects/picture-in-picture/index.html)
+[Picture in Picture (Desktop Only)](https://adityasingh2509.github.io/mini-projects/picture-in-picture/index.html)
 
 This website provides the user with a picture-in-picture tool with which the User can view the following Media Options:
 
