@@ -1,6 +1,6 @@
 <div align="center">Repository for Mini-Projects</div>
 
-<div align="center">Use the below Links (latest first) to view the Web-Pages if complete URL is unknown to you.</div>
+<div align="center">Use the below Links (latest first) to view the Web-Pages.</div>
 
 - [Picture in Picture](https://adityasingh2509.github.io/mini-projects/picture-in-picture/index.html)
 
