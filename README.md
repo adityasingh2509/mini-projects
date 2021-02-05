@@ -8,5 +8,5 @@
 
 - [Quotes Generator](https://adityasingh2509.github.io/mini-projects/random-quote-generator/index.html)
 
-- [Background Gradient Generator](https://adityasingh2509.github.io/mini-projects/background-generator/index.html)
+- [Background Gradient Generator](https://adityasingh2509.github.io/mini-projects/background-gradient-generator/index.html)
 
