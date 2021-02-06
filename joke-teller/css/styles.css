@@ -49,7 +49,7 @@ button:disabled {
     filter: brightness(30%);
 }
 
-.speech-bubble {
+.bubble {
     position: relative;
     margin: 2vh 5vw;
     background-color: #f8fff89a;
@@ -60,7 +60,7 @@ button:disabled {
     max-width: 325px;
 }
 
-.speech-bubble::before {
+.bubble::before {
     content: '';
     position: absolute;
     left: 0;
