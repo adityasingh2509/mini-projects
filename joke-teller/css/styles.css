@@ -1,11 +1,11 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
-    background-color: #45badd;
+    background: #45badd;
 }
 
 .container {
@@ -15,5 +15,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url();
+    background: url('../images/robot.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
