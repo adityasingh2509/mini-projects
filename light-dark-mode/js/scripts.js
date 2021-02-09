@@ -15,6 +15,7 @@ function imageMode(color) {
 }
 
 
+// Optimized darkMode() and lightMode()
 function toggleDarkLightMode(isDark) {
     nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
     textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
