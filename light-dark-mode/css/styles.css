@@ -180,3 +180,17 @@ p {
     margin: 0;
     line-height: 25px;
 }
+
+
+/* Contact Section */
+
+.fab {
+    font-size: 100px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.fab:hover {
+    color: var(--on-background);
+}
