@@ -75,6 +75,7 @@ a {
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
+    font-weight: bold;
 }
 
 a:hover,
@@ -88,4 +89,26 @@ a:focus {
 
 .title-group {
     text-align: center;
+}
+
+
+/* About Section */
+
+.about-container {
+    display: flex;
+}
+
+.image-container {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 25px;
+    width: auto;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+}
+
+img {
+    height: 35vh;
+    width: 30vw;
 }
